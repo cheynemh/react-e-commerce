@@ -1,0 +1,13 @@
+.Searchbar {
+    width: 50vw;
+    height: 35px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #888;
+    &__button button {
+        position: relative;
+        margin-left: -30px;
+        background: none;
+        border: none;
+    }
+}

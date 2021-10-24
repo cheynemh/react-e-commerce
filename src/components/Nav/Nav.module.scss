@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+.nav {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    width: 100vw;
+    height: 60px;
+    background: #f4f3f2;
+    &__logo {
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin: 10px;
+    }
+    &__icon {
+        margin: 0 10px 0 10px;
+        &_heart {
+            margin: 3px 10px 0 0;
+        }
+    }
+    &__right {
+        float: right;
+        margin: 5px 30px 0 0;
+    }
+}
+
+.searchbar {
+    margin-left: 13vw;
+    z-index: 999;
+}

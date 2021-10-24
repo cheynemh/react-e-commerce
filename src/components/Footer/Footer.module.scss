@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,700;1,400&display=swap");
+
+.Footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    padding-bottom: 10px;
+    & p {
+        font-family: monospace;
+        cursor: crosshair;
+        color: black;
+        margin: 0 auto;
+        width: 100px;
+        border-top: 1px solid black;
+        padding: 10px;
+    }
+}
