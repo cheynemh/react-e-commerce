@@ -1,0 +1,14 @@
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 105px;
+    width: 34vw;
+    height: 85vh;
+
+    & img {
+        min-width: 600px;
+        min-height: 800px;
+        width: 100%;
+    }
+}

@@ -7,7 +7,7 @@ const Searchbar = () => {
             <input
                 className={styles.Searchbar}
                 type="text"
-                placeholder="search..."
+                placeholder="What are you looking for?"
             />
             <span className={styles.Searchbar__button}>
                 <button>

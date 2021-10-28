@@ -1,0 +1,17 @@
+.Products {
+    border: 1px solid red;
+    width: 80vw;
+    margin: 15vh auto;
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+    }
+}
+
+.ProductCard {
+    border: 1px solid blue;
+    &_image {
+        width: 300px;
+        height: 300px;
+    }
+}
