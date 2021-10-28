@@ -1,17 +1,40 @@
 .Products {
-    border: 1px solid red;
-    width: 80vw;
+    // border: 1px solid red;
+    width: 75vw;
     margin: 15vh auto;
-    &__grid {
-        display: grid;
-        grid-template-columns: repeat (3, 1fr);
+    &__flex {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
     }
 }
 
 .ProductCard {
-    border: 1px solid blue;
-    &_image {
+    text-align: center;
+    &__image {
+        margin-bottom: 10px;
         width: 300px;
         height: 300px;
+        min-height: 200px;
+        min-width: 200px;
+    }
+    &__price {
+        color: #e07878;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    &:hover {
+        color: #e07878;
     }
 }

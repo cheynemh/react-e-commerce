@@ -2,6 +2,7 @@ import styles from "./Product.module.scss";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { findProduct } from "../../services/crud";
+import Button from "../Button";
 
 const Product = () => {
     const { id } = useParams();
@@ -37,7 +38,8 @@ const Product = () => {
                 <h1>{product.name}</h1>
                 <p className={styles.price}>{product.price}</p>
                 <p className={styles.colour__purple}>{product.colour}</p>
-                <p className={styles.cartButton}>add to cart</p>
+                {/* <p className={styles.cartButton}>add to cart</p> */}
+                <Button />
                 <p className={styles.desc}>{product.desc}</p>
             </div>
         </div>

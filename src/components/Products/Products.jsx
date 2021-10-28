@@ -2,6 +2,7 @@ import styles from "./Products.module.scss";
 import { useState, useEffect } from "react";
 import { getProducts, updateProduct } from "../../services/crud";
 import { Link } from "react-router-dom";
+import Button from "../Button";
 
 const ProductCard = ({ product }) => {
     // const [product, setProduct] = useState("");
@@ -11,16 +12,17 @@ const ProductCard = ({ product }) => {
     // };
 
     return (
-        <div className={styles.ProducCard}>
+        <div className={styles.ProductCard}>
             <Link to={`/product/${product.id}`}>
                 <img
-                    className={styles.ProductCard_image}
+                    className={styles.ProductCard__image}
                     src={product.img}
                     alt="product"
                 />
-                <p>{product.name}</p>
+                <Button />
+                <p className={styles.ProductCard__name}>{product.name}</p>
             </Link>
-            <p className={styles.price}>{product.price}</p>
+            <p className={styles.ProductCard__price}>{product.price}</p>
         </div>
     );
 };
@@ -39,7 +41,7 @@ const Products = () => {
     return (
         <div className={styles.Products}>
             <h1>Products</h1>
-            <div className={styles.Products__grid}>
+            <div className={styles.Products__flex}>
                 {products &&
                     products.map((product, index) => (
                         <ProductCard product={product} key={index} />
