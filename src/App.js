@@ -8,6 +8,13 @@ import Landing from "./containers/Landing";
 import Footer from "./containers/Footer";
 import Product from "./components/Product";
 import Products from "./components/Products";
+import Cart from "./components/Cart/Cart";
+
+// tdl --
+// add to cart
+// cart logic
+// searchbar functionality
+//
 
 function App() {
     return (
@@ -21,6 +28,9 @@ function App() {
                     </Route>
                     <Route path="/product/:id">
                         <Product />
+                    </Route>
+                    <Route path="/cart">
+                        <Cart />
                     </Route>
                     <Route path="/">
                         <Landing />

@@ -3,9 +3,8 @@ import styles from "./Carousel.module.scss";
 import Carousel from "react-bootstrap/Carousel";
 
 import slide01 from "./img/keeb.jpg";
-import slide02 from "./img/headset.png";
+import slide02 from "./img/headset.jpg";
 import slide03 from "./img/mint.jpg";
-import slide04 from "./img/mirror.jpg";
 
 const Caro = () => {
     return (
@@ -29,12 +28,6 @@ const Caro = () => {
                     <img src={slide03} alt="Third slide" />
                     <Carousel.Caption>
                         {/* <h3>Third slide label</h3> */}
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item interval={6000}>
-                    <img src={slide04} alt="Fourth slide" />
-                    <Carousel.Caption>
-                        {/* <h3>Fourth slide label</h3> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
