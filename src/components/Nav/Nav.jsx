@@ -7,7 +7,7 @@ import Searchbar from "../Searchbar";
 const Nav = () => {
     return (
         <nav className={styles.nav}>
-            <MoonStars className={styles.nav__icon} color="black" size={20} />
+            {/* <MoonStars className={styles.nav__icon} color="black" size={20} /> */}
             <NavLink exact to="/" className={styles.nav__logo}>
                 WISHLIST
             </NavLink>

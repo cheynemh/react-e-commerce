@@ -41,20 +41,9 @@ a {
         color: #e07878;
     }
 }
-.Favourite:hover {
-    fill: #e07878;
-}
 
-.Favourited {
-    fill: none;
-    stroke: #e07878;
-    stroke-width: 10px;
-    stroke-linejoin: round;
-    cursor: pointer;
-}
-
-.Unfav {
-    fill: #e07878;
-    stroke: none;
-    cursor: pointer;
+.Favourite_btn {
+    border: none;
+    outline: none;
+    background: none;
 }

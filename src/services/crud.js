@@ -21,7 +21,7 @@ export const findProduct = async (id) => {
 
 export const updateProduct = async (id, partial) => {
     const colRef = firestore.collection("products");
-    const docRef = colRef.doc(id);
+    const docRef = colRef.doc(id).update();
     await docRef.update(partial);
 };
 
