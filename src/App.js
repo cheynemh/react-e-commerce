@@ -2,10 +2,19 @@ import "./App.module.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import FreeShipping from "./components/Nav/FreeShipping";
-import Caro from "./components/Carousel";
-import Grid from "./components/Grid";
-import Footer from "./components/Footer";
+import FreeShipping from "./components/FreeShipping";
+import Caro from "./containers/Carousel";
+import Landing from "./containers/Landing";
+import Footer from "./containers/Footer";
+import Product from "./components/Product";
+import Products from "./components/Products";
+import Cart from "./components/Cart/Cart";
+
+// tdl --
+// add to cart
+// cart logic
+// searchbar functionality
+//
 
 function App() {
     return (
@@ -13,12 +22,23 @@ function App() {
             <Router>
                 <Nav />
                 <FreeShipping />
+                <Switch>
+                    <Route path="/products">
+                        <Products />
+                    </Route>
+                    <Route path="/product/:id">
+                        <Product />
+                    </Route>
+                    <Route path="/cart">
+                        <Cart />
+                    </Route>
+                    <Route path="/">
+                        <Landing />
+                        <Caro />
+                    </Route>
+                </Switch>
+                <Footer />
             </Router>
-
-            <Caro />
-            <Grid />
-
-            <Footer />
         </div>
     );
 }

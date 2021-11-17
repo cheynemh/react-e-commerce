@@ -1,32 +1,30 @@
-import { Link } from "react-router-dom";
 import styles from "./Nav.module.scss";
-import React from "react";
-import { Cart4, MoonStars, Heart } from "react-bootstrap-icons";
-import Searchbar from "./Searchbar/Searchbar";
+import { NavLink } from "react-router-dom";
+
+import { Cart4, MoonStars } from "react-bootstrap-icons";
+import Searchbar from "../Searchbar";
 
 const Nav = () => {
     return (
         <nav className={styles.nav}>
-            <MoonStars className={styles.nav__icon} color="black" size={20} />
-            <span className={styles.nav__logo}>WISHLIST</span>
+            {/* <MoonStars className={styles.nav__icon} color="black" size={20} /> */}
+            <NavLink exact to="/" className={styles.nav__logo}>
+                WISHLIST
+            </NavLink>
             <span className={styles.searchbar}>
                 <Searchbar />
             </span>
             <span className={styles.nav__right}>
-                <Link to="/fav">
-                    <Heart
-                        className={styles.nav__icon_heart}
-                        color="black"
-                        size={20}
-                    />
-                </Link>
-                <Link to="/cart">
+                <NavLink exact to="/products" className={styles.nav__logo}>
+                    PRODUCTS
+                </NavLink>
+                <NavLink exact to="/cart">
                     <Cart4
                         className={styles.nav__icon}
                         color="black"
-                        size={24}
+                        size={23}
                     />
-                </Link>
+                </NavLink>
             </span>
         </nav>
     );

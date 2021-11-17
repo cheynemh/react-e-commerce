@@ -1,0 +1,11 @@
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 105px;
+    width: 50vw;
+    height: 120vh;
+    // height: calc(100vh - 150px);
+    min-height: 1080px;
+    overflow: hidden;
+}
